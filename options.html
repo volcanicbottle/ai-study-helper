@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI Assistant Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>API Configuration</h1>
+    <div class="form-group">
+      <label for="apiKey">Baidu API Key:</label>
+      <div class="input-group">
+        <input type="password" id="apiKey" placeholder="Enter API Key">
+        <button id="toggleVisibility" class="toggle-btn">
+          <img src="eye.png" alt="Show/Hide" id="eyeIcon">
+        </button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="secretKey">Baidu Secret Key:</label>
+      <div class="input-group">
+        <input type="password" id="secretKey" placeholder="Enter Secret Key">
+        <button id="toggleSecretVisibility" class="toggle-btn">
+          <img src="eye.png" alt="Show/Hide" id="secretEyeIcon">
+        </button>
+      </div>
+    </div>
+    <button id="saveBtn" class="save-btn">Save</button>
+    <div id="toast" class="toast">Settings saved successfully</div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html> 
